@@ -67,13 +67,13 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 mb-12"
           >
             <Button variant="hero" size="xl" className="group" asChild>
-              <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjTRAzGdkyGEI7ZhxyajJeNorwfexE2f54JeQAvjsi78NMNQ/viewform" target="_blank" rel="noopener noreferrer">
                 Make An Impact
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjTRAzGdkyGEI7ZhxyajJeNorwfexE2f54JeQAvjsi78NMNQ/viewform" target="_blank" rel="noopener noreferrer">
                 Serve With Us
               </a>
             </Button>

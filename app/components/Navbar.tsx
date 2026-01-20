@@ -11,8 +11,8 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Partnership", href: "/partners" },
-    { name: "Missionary", href: "/become-a-missionary" },
+    { name: "Partnership", href: "https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true" },
+    { name: "Missionary", href: "https://docs.google.com/forms/d/e/1FAIpQLSdjTRAzGdkyGEI7ZhxyajJeNorwfexE2f54JeQAvjsi78NMNQ/viewform?embedded=true" },
     { name: "Volunteer", href: "/volunteer" },
     { name: "Contact", href: "/contact" },
   ];

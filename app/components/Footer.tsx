@@ -1,21 +1,22 @@
 // components/Footer.tsx
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Twitter,LinkedinIcon, Phone, MapPin, Mail } from 'lucide-react';
 
 export default function Footer() {
   const quickLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Donate', href: '/donate' },
+    { name: 'About ', href: '/about' },
+    { name: 'Partnership', href: "https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true"},
+    { name: 'Missionary', href: "https://docs.google.com/forms/d/e/1FAIpQLSdjTRAzGdkyGEI7ZhxyajJeNorwfexE2f54JeQAvjsi78NMNQ/viewform?embedded=true" },
     { name: 'Volunteer', href: '/volunteer' },
-    { name: 'Missionaries', href: '/missionaries' },
     { name: 'Contact', href: '/contact' },
   ];
 
   const socialLinks = [
     { icon: <Facebook className="w-5 h-5" />, href: '#', label: 'Facebook' },
-    { icon: <Instagram className="w-5 h-5" />, href: '#', label: 'Instagram' },
+    { icon: <Instagram className="w-5 h-5" />, href: 'https://www.instagram.com/jesusmissionfund/?hl=en', label: 'Instagram' },
     { icon: <Twitter className="w-5 h-5" />, href: '#', label: 'Twitter' },
+    { icon: <LinkedinIcon className="w-5 h-5" />, href: 'https://www.linkedin.com/in/jesus-mission-fund-9100a43a1/', label: 'LinkedIn' },
   ];
 
   return (
@@ -74,17 +75,17 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-gray-400">
-                  123 Mission Street<br />
-                  Global Outreach City, GC 12345
+                  Community 8<br />
+                 Adjacent Deks Educational Institute ,Tema
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-green-400 mr-3" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+233547537888</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-green-400 mr-3" />
-                <span className="text-gray-400">contact@Jesus'missionfund.org</span>
+                <span className="text-gray-400">contact@Jesus&apos;missionfund.org</span>
               </li>
             </ul>
           </div>
@@ -93,7 +94,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Jesus'MissionFund. All rights reserved.
+            © {new Date().getFullYear()} Jesus&apos;MissionFund. All rights reserved.
             <span className="block mt-2 text-gray-600">
               A 501(c)(3) non-profit organization
             </span>
