@@ -49,7 +49,7 @@ export default function HeroSection() {
             transition={{ delay: 0.3 }}
             className="text-5xl  sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1]"
           >
-            Jesus <span className="text-gradient">Mission</span>
+            Jesus&apos; <span className="text-gradient">Mission</span>
             <br />
             Fund <span className="text-gradient"></span>
           </motion.h1>
