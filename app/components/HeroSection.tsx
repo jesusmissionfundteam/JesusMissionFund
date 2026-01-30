@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Users, Heart, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 
-
 const stats = [
   { icon: Globe, value: "All", label: "Countries" },
   { icon: Users, value: "Willing", label: "Volunteers" },
@@ -14,7 +13,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen hero-gradient overflow-hidden">
+    <section className="relative min-h-[85vh] lg:min-h-screen hero-gradient overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
@@ -22,21 +21,21 @@ export default function HeroSection() {
         <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse-soft" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto min-h-screen px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 py-24 lg:py-20">
+      <div className="relative max-w-7xl mx-auto min-h-[85vh] lg:min-h-screen px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 py-20 lg:py-20">
         
         {/* LEFT CONTENT */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex flex-col justify-center text-left z-10"
+          className="flex-1 flex flex-col justify-center text-center lg:text-left z-10"
         >
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center self-start px-4 py-2 glass-card text-secondary text-sm font-medium mb-6"
+            className="inline-flex items-center self-center lg:self-start px-4 py-2 glass-card text-secondary text-sm font-medium mb-6"
           >
             <Users className="w-4 h-4 mr-2" />
             Empowering Global Mission Support
@@ -47,11 +46,9 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-5xl  sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1]"
+            className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight"
           >
-            Jesus&apos; <span className="text-gradient">Mission</span>
-            <br />
-            Fund <span className="text-gradient"></span>
+            Jesus&apos; <span className="text-gradient">Mission Fund</span>
           </motion.h1>
 
           {/* Paragraph */}
@@ -59,7 +56,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-lg lg:text-xl text-muted-foreground mb-10 max-w-lg"
+            className="text-lg lg:text-xl text-muted-foreground mb-10 max-w-md mx-auto lg:mx-0"
           >
             Partner with us to raise funds and support missionaries and volunteers spreading hope and God’s love to communities everywhere. Every moment counts—your donations help those afar.
           </motion.p>
@@ -69,7 +66,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 mb-12"
+            className="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start"
           >
             <Button variant="hero" size="xl" className="group" asChild>
               <a
@@ -98,7 +95,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="flex flex-wrap gap-6"
+            className="flex flex-wrap gap-6 justify-center lg:justify-start"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -125,7 +122,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="flex-1 relative w-full max-w-xl"
+          className="flex-1 relative w-full max-w-md lg:max-w-xl"
         >
           <div className="relative">
             <div className="absolute -inset-4 bg-linear-to-br from-primary/20 via-secondary/10 to-accent/20 rounded-[3rem] blur-sm" />
@@ -134,7 +131,7 @@ export default function HeroSection() {
               className="relative overflow-hidden shadow-elevated"
               style={{
                 borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%",
-                aspectRatio: "4/5",
+                aspectRatio: "3/4",
               }}
             >
               <Image
