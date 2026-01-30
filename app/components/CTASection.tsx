@@ -4,10 +4,10 @@ import { Heart } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-linear-to-b from-white to-gray-50">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Container */}
-        <div className="bg-gradient-to-br from-green-900 to-emerald-800 rounded-3xl shadow-2xl p-12 md:p-16">
+        <div className="bg-linear-to-br from-green-900 to-emerald-800 rounded-3xl shadow-2xl p-12 md:p-16">
           {/* Icon */}
           <div className="inline-flex p-4 bg-white/20 backdrop-blur-sm rounded-full mb-8">
             <Heart className="w-12 h-12 text-white" />
@@ -27,14 +27,16 @@ export default function CTASection() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/donate"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true"
+              target="_blank"
               className="px-10 py-4 bg-white text-green-900 font-bold text-lg rounded-xl hover:bg-green-50 transition-all duration-300 transform hover:scale-105"
             >
               Partner With Us
             </Link>
 
             <Link
-              href="/volunteer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true"
+              target="_blank"
               className="px-10 py-4 border-2 border-white text-white font-bold text-lg rounded-xl hover:bg-white/10 transition-all duration-300"
             >
               Volunteer{" "}

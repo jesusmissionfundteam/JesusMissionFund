@@ -6,7 +6,7 @@ export default function InfoSection() {
     {
       icon: <Globe className="w-12 h-12" />,
       title: "Who We Serve",
-      description: "Supporting missionaries across 50+ nations, focusing on unreached people groups and regions where the Gospel has limited access.",
+      description: "Supporting missionaries across the nations, focusing on unreached people groups and regions where the Gospel has limited access.",
       color: "from-blue-500 to-cyan-500",
     },
     {
@@ -24,7 +24,7 @@ export default function InfoSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-linear-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -45,7 +45,7 @@ export default function InfoSection() {
               className="group relative bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
             >
               {/* Icon Container with Gradient */}
-              <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${card.color} text-white mb-6`}>
+              <div className={`inline-flex p-4 rounded-xl bg-linear-to-br ${card.color} text-white mb-6`}>
                 {card.icon}
               </div>
               
@@ -58,7 +58,7 @@ export default function InfoSection() {
               </p>
               
               {/* Decorative Element */}
-              <div className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r ${card.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+              <div className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-linear-to-r ${card.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
             </div>
           ))}
         </div>
