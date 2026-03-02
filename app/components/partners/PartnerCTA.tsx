@@ -24,30 +24,76 @@ export default function PartnerCTA() {
           </h2>
 
           <div className="space-y-2 mb-10">
-            <p className="text-lg text-muted-foreground">This is your opportunity to take your place behind the lines.</p>
-            <p className="text-foreground font-semibold">The soldiers are in the field.</p>
-            <p className="text-foreground font-semibold">The harvest is ready.</p>
-            <p className="text-foreground font-semibold">The mission is urgent.</p>
-            <p className="text-xl text-primary font-bold mt-4">Will you stand with them?</p>
+            <p className="text-lg text-muted-foreground">
+              This is your opportunity to take your place behind the lines.
+            </p>
+            <p className="text-foreground font-semibold">
+              The soldiers are in the field.
+            </p>
+            <p className="text-foreground font-semibold">
+              The harvest is ready.
+            </p>
+            <p className="text-foreground font-semibold">
+              The mission is urgent.
+            </p>
+            <p className="text-xl text-primary font-bold mt-4">
+              Will you stand with them?
+            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button variant="hero" size="xl" className="group w-full sm:w-auto">
-              Partner With Jesus&apos; Mission Fund
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true" target="_blank" rel="noopener noreferrer"></a>
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="heroOutline" size="xl" className="group w-full sm:w-auto">
-              Send the Gospel Further
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true" target="_blank" rel="noopener noreferrer"></a>
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+           <Button
+  asChild
+  variant="heroOutline"
+  size="xl"
+  className="group w-full sm:w-auto"
+>
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-green-600 text-black px-10 py-4 font-bold text-lg rounded-xl hover:bg-green-700 transition-all duration-300 transform hover:scale-105 group-hover:bg-green-700"
+  >
+Partner With Jesus&apos; Mission Fund    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+  </a>
+</Button>
+            <Button
+              asChild
+              variant="heroOutline"
+              size="xl"
+              className="group w-full sm:w-auto"
+            >
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                Send the Gospel Further
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
           </div>
 
           <div className="space-y-2">
-            <p className="text-muted-foreground">Together, we will <span className="font-semibold text-foreground">advance the Kingdom.</span></p>
-            <p className="text-muted-foreground">Together, we will <span className="font-semibold text-foreground">fund the fight.</span></p>
-            <p className="text-muted-foreground">Together, we will <span className="font-semibold text-primary">see souls won for Christ.</span></p>
+            <p className="text-muted-foreground">
+              Together, we will{" "}
+              <span className="font-semibold text-foreground">
+                advance the Kingdom.
+              </span>
+            </p>
+            <p className="text-muted-foreground">
+              Together, we will{" "}
+              <span className="font-semibold text-foreground">
+                fund the fight.
+              </span>
+            </p>
+            <p className="text-muted-foreground">
+              Together, we will{" "}
+              <span className="font-semibold text-primary">
+                see souls won for Christ.
+              </span>
+            </p>
           </div>
         </motion.div>
       </div>
