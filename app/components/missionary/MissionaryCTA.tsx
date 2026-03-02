@@ -33,7 +33,9 @@ export default function MissionaryCTA() {
           </p>
           <Button variant="hero" size="xl" className="group">
             👉🏾 Help Me Do More for Christ
-            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true" target="_blank" rel="noopener noreferrer">
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </a>
           </Button>
         </motion.div>
       </div>
