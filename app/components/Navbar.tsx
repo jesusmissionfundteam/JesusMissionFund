@@ -2,24 +2,23 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
+type NavLink = {
+  name: string;
+  href: string;
+  external?: boolean;
+};
+
+const navLinks: NavLink[] = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  {
-    name: "Partners",
-    href: "/partner",
-     
-  },
-  {
-    name: "Missionary",
-    href:"/missionary",
-      
-  },
+  { name: "Partners", href: "/partner" },
+  { name: "Missionary", href: "/missionary" },
 ];
 
 export default function Navbar() {
@@ -27,19 +26,22 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-<nav className="fixed w-full z-50 bg-emerald-700/20 backdrop-blur-md border-b border-emerald-900/10">
-      <div className="max-w-7xl mx-auto px-4 h-18 flex justify-between items-center">
+    <nav className="fixed w-full z-50 bg-emerald-700/20 backdrop-blur-md border-b border-emerald-900/10">
+      <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+        
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img
+          <Image
             src="/JMF_Logo-Green_NoBG.png"
             alt="Logo"
-            className="h-20 w-20"
+            width={80}
+            height={80}
+            priority
           />
         </Link>
 
-        {/* Desktop Navigation Links all the links and hover properties below */}
-        <div className="hidden md:flex space-x-18">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-8">
           {navLinks.map((link) =>
             link.external ? (
               <a
@@ -86,7 +88,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-<div className="md:hidden bg-emerald-700/30 backdrop-blur-md px-4 py-4">
+        <div className="md:hidden bg-emerald-700/30 backdrop-blur-md px-4 py-4">
           {navLinks.map((link) =>
             link.external ? (
               <a
@@ -116,7 +118,12 @@ export default function Navbar() {
             )
           )}
 
-          <Button variant="hero" size="sm" className="mt-4 w-full" asChild>
+          <Button
+            variant="hero"
+            size="sm"
+            className="mt-4 w-full"
+            asChild
+          >
             <Link href="/donate">Donate Now</Link>
           </Button>
         </div>
