@@ -27,7 +27,7 @@ export default function CTASection() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true"
+              href="/partner"
               target="_blank"
               className="px-10 py-4 bg-white text-green-900 font-bold text-lg rounded-xl hover:bg-green-50 transition-all duration-300 transform hover:scale-105"
             >

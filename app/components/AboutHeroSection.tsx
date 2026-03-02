@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Users, Heart, Globe } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import herovolunteers from "@/public/hero-volunteers.jpg";
-const heroImage = herovolunteers;
+
 const stats = [
   { icon: Globe, value: "50+", label: "Countries" },
   { icon: Users, value: "10K+", label: "Volunteers" },
@@ -129,7 +128,7 @@ export default function HeroSection() {
               }}
             >
               <Image
-                src={heroImage}
+                src="/hero-volunteers.jpg"
                 alt="Volunteers helping communities around the world"
                 className="w-full h-full object-cover"
                 fill

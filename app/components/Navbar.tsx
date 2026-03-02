@@ -9,18 +9,16 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/notfound" },
+  { name: "About", href: "/about" },
   {
-    name: "Partnership",
-    href:
-      "https://docs.google.com/forms/d/e///////1FAIpQLSfxKaZfkIjl5EUZ-Jd8AemZjvPMSgmJXQYXBVXMV4Fti3L3cA/viewform?embedded=true",
-    external: true,
+    name: "Partners",
+    href: "/partner",
+     
   },
   {
     name: "Missionary",
-    href:
-      "https://docs.google.com/forms/d/e///1FAIpQLSdjTRAzGdkyGEI7ZhxyajJeNorwfexE2f54JeQAvjsi78NMNQ/viewform?embedded=true",
-    external: true,
+    href:"/missionary",
+      
   },
 ];
 
@@ -41,7 +39,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links all the links and hover properties below */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-18">
           {navLinks.map((link) =>
             link.external ? (
               <a
